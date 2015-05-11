@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>insert food</title>
+
+<script language="javascript">
+	function returnf() {
+		location.replace('i_adminres.jsp');
+	}
+	function ispng() {
+		imgfile = document.getElementById("imgfile");
+		filename = imgfile.value;
+		ttt = file.lastIndexOf('.');
+		overDot = filename.substring(ttt+1,filename.length);
+		if(overDot=="png"){
+			alert("png파일이 맞아영");
+		}else{
+			alert("png로 올려줘여");
+		}
+	}
+</script>
+
+
+</head>
+<body bgcolor="#f5f5f5">
+	<form action="i_insertres.jsp" method="post" name="insert_res" enctype="multipart/form-data">
+			<table border="1" bordercolor="white" width="448" align="center">
+				<tr bgcolor="white" align="center">
+					<td>음식점이름</td>
+					<td width="300"><input type="text" size="39" name="name"
+						id="name" ></td>
+				</tr>
+				<tr bgcolor="white" align="center">
+					<td>취급음식</td>
+					<td><input type="text" size="39" name="foods"
+						id="foods" placeholder="여러항목 입력시 ','로 구분."></td>
+				</tr>
+				<tr bgcolor="white" align="center">
+					<td>전화번호</td>
+					<td><input type="text" size="39" name="tel"
+						id="tel" ></td>
+				</tr>
+				<tr bgcolor="white" align="center">
+					<td>주소</td>
+					<td><input type="text" size="39" name="addr"
+						id="addr" ></td>
+				</tr>
+                <tr bgcolor="white" align="center">
+				<td height="24">Image</td>
+				<td><input type="file" id="imgfile" name="imgfile" onChange="ispng()">
+	
+				</td>
+				</tr>
+				<tr bgcolor="white" align="center">
+					<td> 소개</td>
+					<td><textarea cols="30" rows="6" name="intro"
+						id="intro" ></textarea></td>
+				</tr>
+
+				<tr bgcolor="white" align="center">
+					<td colspan="2" align="center"><input type="submit"
+						align="center" value="확인 및 지도수정"> <input type="button"
+						align="center" value="목록으로 돌아가기" onClick="returnf()"></td>
+				</tr>
+			</table>
+	</form>
+	<p>&nbsp;</p>
+	</p>
+</body>
+
+</html>

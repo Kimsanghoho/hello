@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+<script language="javascript">
+
+ 	function admin_log(){
+	 	if(confirm("로그아웃하시겠습니까?")){
+			parent.frames[2].location.replace('c.html');
+			parent.frames[1].location.replace('b.html');
+			parent.frames[0].location.replace('a_2.html');
+	 	}else{
+	 		
+	 	}
+
+	}
+	function move1(){
+		parent.frames[2].location.replace('adminCus.html');
+	}
+	function move2(){
+		parent.frames[2].location.replace('adminFood.html');
+	}
+	function move3(){
+		parent.frames[2].location.replace('adminRes.html');
+	}
+
+	</script>
+</head>
+
+ <body bgcolor="#202020" marginheight="0">
+
+ 
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%"> <img src="logout.png" align="top" style="width:60px;height:60px" onClick="admin_log()"></td>
+    <td width="20%">&nbsp;</td>
+    <td width="19%" align="center"><img src="img/cus.png" width="125" height="60" alt="ȸ������" onClick='move1()'></td>
+    <td width="19%" align="center"><img src="img/food.png" width="125" height="60" alt="���İ���" onClick='move2()'></td>
+    <td width="19%" align="center"><img src="img/rest.png" width="155" height="60" alt="����������" onClick='move3()'></td>
+    <td width="19%">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

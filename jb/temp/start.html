@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function goToResult(){
+		location.replace('result.jsp');
+}
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<center>
+		<form action="end.jsp" method="post">
+			<table border="2">
+				<tr bordercolor="white">
+					<td colspan="3"><img src="so.png">
+					<hr></td>
+				</tr>
+				<tr bordercolor="white" align="center">
+					<td colspan="3">대상(광성도르)</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>기호</td>
+					<td>코드네임</td>
+					<td width="40">선택</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>가</td>
+					<td>무멘</td>
+					<td width="40"><input type="radio" name="1st" value="무멘"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>나</td>
+					<td>주멘</td>
+					<td width="40"><input type="radio" name="1st" value="주멘"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>다</td>
+					<td>도도</td>
+					<td width="40"><input type="radio" name="1st" value="도도"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>로</td>
+					<td>성로리</td>
+					<td width="40"><input type="radio" name="1st" value="성로리"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>마</td>
+					<td>진영준</td>
+					<td width="40"><input type="radio" name="1st" value="진영준"></td>
+				</tr>
+				<!--------------------------1차 끝--------------------------------->
+				<tr bordercolor="white" align="center">
+					<td colspan="3"><br>올해의 섹드리퍼</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>기호</td>
+					<td>코드네임</td>
+					<td width="40">선택</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>가</td>
+					<td>무멘</td>
+					<td width="40"><input type="radio" name="2nd" value="무멘"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>나</td>
+					<td>호선생</td>
+					<td width="40"><input type="radio" name="2nd" value="호선생"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>다</td>
+					<td>도베일</td>
+					<td width="40"><input type="radio" name="2nd" value="도베일"></td>
+				</tr>
+				<!--------------------------2차 끝--------------------------------->
+				<tr bordercolor="white" align="center">
+					<td colspan="3"><br>올해의 로ㄹ....</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>기호</td>
+					<td>코드네임</td>
+					<td width="40">선택</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>가</td>
+					<td>빛로킹</td>
+					<td width="40"><input type="radio" name="3rd" value="빛로킹"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>나</td>
+					<td>도로리</td>
+					<td width="40"><input type="radio" name="3rd" value="도로리"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>다</td>
+					<td>로성지</td>
+					<td width="40"><input type="radio" name="3rd" value="로성지"></td>
+				</tr>
+				<!--------------------------3차 끝--------------------------------->
+				<tr bordercolor="white" align="center">
+					<td colspan="3"><br>올해의 노점상(No Zam, Yes Stress)</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>기호</td>
+					<td>코드네임</td>
+					<td width="40">선택</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>가</td>
+					<td>진영준</td>
+					<td width="40"><input type="radio" name="4th" value="진영준"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>나</td>
+					<td>돈그로</td>
+					<td width="40"><input type="radio" name="4th" value="돈그로"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>다</td>
+					<td>혀노(고인)</td>
+					<td width="40"><input type="radio" name="4th" value="혀노"></td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>라</td>
+					<td>별점장</td>
+					<td width="40"><input type="radio" name="4th" value="별점장"></td>
+				</tr>
+				<!--------------------------4차 끝--------------------------------->
+				<tr bordercolor="white" align="center">
+					<td colspan="3"><br>올해의 어그로</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>가</td>
+					<td>돈그로</td>
+					<td width="40"><input type="radio" name="5th"
+						checked="checked" value="돈그로"></td>
+				</tr>
+				<!--------------------------5차 끝--------------------------------->
+				<tr bordercolor="white" align="center">
+					<td colspan="3"><br>올해의 개진상</td>
+				</tr>
+				<tr bordercolor="black" align="center">
+					<td>가</td>
+					<td>진영준</td>
+					<td width="40"><input type="radio" name="6th"
+						checked="checked" value="진영준"></td>
+				</tr>
+				<tr bordercolor="white" align="center">
+					<td colspan="3"><br><hr><button type="submit">투표하기</button><button type="button" onclick="goToResult()">결과보기</button></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>
